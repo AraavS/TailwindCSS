@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tailwind CSS</title>
+</head>
+
+<body class="bg-gradient-to-b from-purple-800 via-blue-800 to-teal-800 min-h-screen flex flex-col items-center justify-center overflow-x-hidden text-white">
+
+    <header class="bg-gray-900 p-6 w-full">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">Problem 3 - Implenting Tailwind CSS</h2>
+        </div>
+    </header>
+
+    <section class="container p-6 flex flex-col items-center justify-center bg-gray-800 rounded-lg shadow-md mt-8">
+        <h1 class="text-gray-300 text-2xl font-bold text-center">Installing Tailwind CSS</h1>
+        <div class="box p-8 mt-8 bg-gray-700 rounded-xl w-6/12 text-base">
+            <div class="steps">
+                <p><strong>A: Executing Commands in Terminal</strong></p>
+                <ul>
+                    <li>npm install tailwindcss</li>
+                    <li>npx tailwindcss init</li>
+                </ul>
+            
+                <p><strong>B: Using File tailwind.config.css</strong></p>
+                <ul>
+                    <li>content: ['./index.html'] // Index.html is the source html code</li>
+                </ul>
+            
+                <p><strong>C: Implementing Tailwind Directives and Generating the CSS File</strong></p>
+                <ul>
+                    <li>@import 'tailwindcss/base';</li>
+                    <li>@import 'tailwindcss/components';</li>
+                    <li>@import 'tailwindcss/utilities';</li>
+                </ul>
+            
+                <p><strong>D: Applying Changes to Input CSS File and Output CSS File</strong></p>
+                <ul>
+                    <li>npx tailwindcss -i ./input.css -o ./output.css --watch</li>
+                </ul>
+            
+                <p><strong>E: Linking the styles.css File to the index.html</strong></p>
+                <ul>
+                    <li>link rel="stylesheet" href="styles.css"</li>
+                </ul>
+            
+                <p><strong>F: Automating Changes</strong></p>
+                <ul>
+                    <li>"scripts": { "build:css": "tailwindcss build styles.css -o styles.css" }</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container p-6 flex flex-col items-center justify-center bg-gray-800 rounded-lg shadow-md mt-8">
+        <h1 class="text-white-300 text-2xl font-bold text-center">Building The Page</h1>
+        <div class="text-con w-9/12 mt-4 text-white-200 text-1xl text-justify bg-gray-800 p-6 rounded-lg shadow-md">
+            Embarking on the journey of creating a webpage with Tailwind CSS begins with its installation, leading to the generation of essential configuration and style files. The heart of the process lies in integrating Tailwind's utility classes directly into HTML tags, offering an intuitive and efficient approach to styling. By configuring the tailwind.config.js file and harnessing the power of Tailwind's Just-In-Time (JIT) mode, the development becomes streamlined, allowing for real-time updates and responsive design adaptability. This method not only simplifies the styling process but also significantly reduces the need for custom CSS, making web development both faster and more responsive to design needs.
+        </div>
+    </section>
+
+    <section class="container p-6 flex flex-col items-center justify-center bg-gray-800 rounded-lg shadow-md mt-8">
+        <h1 class="text-white-300 text-2xl font-bold text-center">Difficulties and Solutions</h1>
+        <div class="text-con w-9/12 mt-4 text-white-200 text-1xl text-justify bg-gray-800 p-6 rounded-lg shadow-md">
+            Initially, adapting to the utility-first concept of Tailwind CSS was quite challenging, as it differed significantly from traditional CSS methods I was accustomed to. The extensive range of utility classes was initially overwhelming, and ensuring a consistent look throughout my project appeared complex. To tackle this, I immersed myself in learning from Tailwind's comprehensive documentation, which greatly helped me understand how to efficiently combine classes and implement responsive design. Additionally, embracing Tailwind's Just-In-Time (JIT) mode made the development process more efficient by generating only essential CSS. This approach gradually enhanced my proficiency in utilizing utility classes, transforming early obstacles into a beneficial learning curve.
+        </div>
+    </section>
+
+    <footer class="text-white-200 text-md m-8">© CPS530 Lab 10c: Tailwind CSS</footer>
+</body>
+
+</html>
